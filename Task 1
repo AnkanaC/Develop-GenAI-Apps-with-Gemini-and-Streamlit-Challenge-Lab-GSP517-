@@ -1,1 +1,28 @@
+# Open google cloud console by entering the temporary credentials provided to you at the lab instructions page
+
+# Go to the Navigation menu and select vertex AI then Workbench
+
+# Go to User Managed NoteBooks and select open JupyterLab
+
+# Once the JupyterLab is opened, Go to files, present at the left side top corner, then select new and then select terminal
+        JupyterLab --> Files --> New --> Terminal
+
+# Once the terminal has opened, paste the followig codes
+
+        gsutil cp gs://spls/gsp517/prompt.ipynb.
+# Press enter
+
+# Then from the left hand side panel select the prompt.ipynb file
+
+# Go to cell 3 and change the "PROJECT ID" with the project id assigned to you
+        it should be looking something like : Project_ID = 'qwiklabs-pro-1234abc'
+
+# In the cell 3 also change the "Region" with the region assigned to you
+        it should be looking something like : Location = 'us-central-1'
+
+# Go to cell 5 and change the promt part with the following promt
+
+        I am a Chef.  I need to create Japanese recipes for customers who want low sodium meals. However, I do not want to include recipes that use ingredients associated with a peanuts food allergy. I have ahi tuna, fresh ginger, and edamame in my kitchen and other ingredients. The customer wine preference is red. Please provide some for meal recommendations. For each recommendation include preparation instructions, time to prepare and the recipe title at the begining of the response. Then include the wine paring for each recommendation. At the end of the recommendation provide the calories associated with the meal and the nutritional facts.
+
+# Run the cells one at a time and then select ctrl+S
 
