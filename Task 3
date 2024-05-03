@@ -1,0 +1,40 @@
+# In the Cloud Shell run the following commands
+
+        python3 -m venv gemini-streamlit
+
+        source gemini-streamlit/bin/activate
+
+        pip install -r requirements.txt
+
+
+# Replace <Project id> with the project id provided to you at the lab instructions
+
+        GCP_PROJECT='<Project id>'
+
+
+# Replace <region> with the reqion assigned to you at the lab instructions
+
+        GCP_REGION='<region>'
+
+        streamlit run chef.py \
+          --browser.serverAddress=localhost \
+          --server.enableCORS=false \
+          --server.enableXsrfProtection=false \
+          --server.port 8080
+
+# In the top right corener of cloud shell there's the option of web preview. Select that. Then select view on port 8080. scroll down to the end and select generate my recipe.
+# Select ctrl+c
+
+#change app.py to chef.py
+
+        vim Dockerfile
+
+
+# Click i from keyboaard to enter into edit mode. Then change app.py to chef.py. Select ESC then :x
+
+
+# In the cloud shell enter the following commands one by one. Replace <Repo name> and <Service name with the one's provided in the lab instructions.
+
+        AR_REPO='<Repo name from lab>'
+
+        SERVICE_NAME='<service name from lab>'
