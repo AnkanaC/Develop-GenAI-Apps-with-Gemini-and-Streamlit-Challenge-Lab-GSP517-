@@ -1,0 +1,5 @@
+# In the cloud shell enter the following 2 commands one by one
+
+        gcloud artifacts repositories create "$AR_REPO" --location="$GCP_REGION" --repository-format=Docker
+
+        gcloud builds submit --tag "$GCP_REGION-docker.pkg.dev/$GCP_PROJECT/$AR_REPO/$SERVICE_NAME"
