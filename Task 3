@@ -33,8 +33,8 @@
 # Click i from keyboaard to enter into edit mode. Then change app.py to chef.py. Select ESC then :x
 
 
-# In the cloud shell enter the following commands one by one. Replace <Repo name> and <Service name with the one's provided in the lab instructions.
+# In the cloud shell enter the following commands one by one.
 
-        AR_REPO='<Repo name from lab>'
+        AR_REPO='chef-repo'
 
-        SERVICE_NAME='<service name from lab>'
+        SERVICE_NAME='chef-streamlit-app'
